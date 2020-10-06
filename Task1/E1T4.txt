@@ -1,0 +1,8 @@
+Based on the architecture diagram, and the steps you have taken so far to upload data and access the application web service, identify at least 2 obvious poor practices as it relates to security.  Include justification.
+
+# Poor practice 1
+The First Major mistake that I would say is about providing S3 all the rights to an IAM role such as CRUD (Create, Read, Update, Delete). So we shouldn't provide an IAM role all the rights of S3 which can be exploitable at some point.
+
+# Poor practice 2
+The Second mistake that I would say is about the Private Subnets which are connected to the internet via the Internet Gateway. I would say here that these subnets can accessed only through the internet via a NAT Gateway.
+

@@ -1,0 +1,16 @@
+# Identify tools that will allow you to do the following:
+
+## Scan infrastructure as code templates
+CloudSploit scans is an open-source project designed to allow detection of security risks in cloud infrastructure accounts, including: Amazon Web Services (AWS), Microsoft Azure, Google Cloud Platform (GCP), and Oracle Cloud Infrastructure (OCI). These scripts are designed to return a series of potential misconfigurations and security risks.
+### Example vulnerability
+Missing the Ingress rule in the the NoIngressSecurityGroup which means all the traffic is allowed outbound.
+
+##Scan AMI’s or containers for OS vulnerabilities
+encryptogroup: The tool scans your system for security or privacy critical data before publishing or when started as virtual machine in the cloud, e.g., an Amazon Machine Image (AMI).
+### Example vulnerability
+https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-5736
+##Scan an AWS environment for cloud configuration vulnerabilities
+AWS Config is a service that enables you to assess, audit, and evaluate the configurations of your AWS resources. Config continuously monitors and records your AWS resource configurations and allows you to automate the evaluation of recorded configurations against desired configurations.
+### Example vulnerability
+s3-bucket-server-side-encryption-enabled which checks that the Amazon S3 bucket either has S3 default encryption enabled or that the S3 bucket policy explicitly denies put-object requests without the server side encryption
+
